@@ -1,0 +1,54 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "MarkdownFlow",
+                        "id": "markdown-flow",
+                        "children": [
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/MarkdownFlow/MarkdownFlow.sublime-settings",
+                                    "default": "{\n\t$0\n}\n"
+                                }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Key Bindings (Windows)",
+                                "platform": "Windows",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/MarkdownFlow/Default (Windows).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings (Linux)",
+                                "platform": "Linux",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/MarkdownFlow/Default (Linux).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings (OSX)",
+                                "platform": "OSX",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/MarkdownFlow/Default (OSX).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

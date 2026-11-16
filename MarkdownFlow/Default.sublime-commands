@@ -1,0 +1,38 @@
+[
+    {
+        "caption": "MarkdownFlow: Renumber Ordered Lists",
+        "command": "markdown_flow_renumber"
+    },
+    {
+        "caption": "MarkdownFlow: Toggle Bold (**)",
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "**" }
+    },
+    {
+        "caption": "MarkdownFlow: Toggle Italic (*)",
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "*" }
+    },
+    {
+        "caption": "MarkdownFlow: Toggle Inline Code (`)",
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "`" }
+    },
+    {
+        "caption": "MarkdownFlow: Toggle Strikethrough (~~)",
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "~~" }
+    },
+    {
+        "caption": "MarkdownFlow: Insert Link",
+        "command": "markdown_flow_insert_link"
+    },
+    {
+        "caption": "Preferences: MarkdownFlow Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/MarkdownFlow/MarkdownFlow.sublime-settings",
+            "default": "{\n\t$0\n}\n"
+        }
+    }
+]

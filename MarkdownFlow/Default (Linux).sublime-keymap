@@ -1,0 +1,163 @@
+[
+    {
+        "keys": ["enter"],
+        "command": "markdown_flow_enter",
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "md_flow.can_enter", "operator": "equal", "operand": true }
+        ]
+    },
+    {
+        "keys": ["keypad_enter"],
+        "command": "markdown_flow_enter",
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "md_flow.can_enter", "operator": "equal", "operand": true }
+        ]
+    },
+    {
+        "keys": ["shift+enter"],
+        "command": "markdown_flow_soft_return",
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "md_flow.can_soft_return", "operator": "equal", "operand": true }
+        ]
+    },
+    {
+        "keys": ["shift+keypad_enter"],
+        "command": "markdown_flow_soft_return",
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "md_flow.can_soft_return", "operator": "equal", "operand": true }
+        ]
+    },
+    {
+        "keys": ["tab"],
+        "command": "markdown_flow_indent",
+        "args": { "direction": 1 },
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "has_next_field", "operator": "equal", "operand": false },
+            { "key": "md_flow.can_indent", "operator": "equal", "operand": true }
+        ]
+    },
+    {
+        "keys": ["shift+tab"],
+        "command": "markdown_flow_indent",
+        "args": { "direction": -1 },
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "has_prev_field", "operator": "equal", "operand": false },
+            { "key": "md_flow.can_indent", "operator": "equal", "operand": true }
+        ]
+    },
+    {
+        "keys": ["backspace"],
+        "command": "markdown_flow_backspace",
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "md_flow.can_backspace_marker", "operator": "equal", "operand": true }
+        ]
+    },
+    {
+        "keys": ["ctrl+b"],
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "**" },
+        "context": [
+            { "key": "setting.markdown_flow_enabled", "operator": "not_equal", "operand": false },
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown - meta.code-fence - markup.raw.code-fence - meta.frontmatter - comment.block.html - text.tex", "match_all": true }
+        ]
+    },
+    {
+        "keys": ["ctrl+i"],
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "*" },
+        "context": [
+            { "key": "setting.markdown_flow_enabled", "operator": "not_equal", "operand": false },
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown - meta.code-fence - markup.raw.code-fence - meta.frontmatter - comment.block.html - text.tex", "match_all": true }
+        ]
+    },
+    {
+        "keys": ["ctrl+e"],
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "`" },
+        "context": [
+            { "key": "setting.markdown_flow_enabled", "operator": "not_equal", "operand": false },
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown - meta.code-fence - markup.raw.code-fence - meta.frontmatter - comment.block.html - text.tex", "match_all": true }
+        ]
+    },
+    {
+        "keys": ["alt+s"],
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "~~" },
+        "context": [
+            { "key": "setting.markdown_flow_enabled", "operator": "not_equal", "operand": false },
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown - meta.code-fence - markup.raw.code-fence - meta.frontmatter - comment.block.html - text.tex", "match_all": true }
+        ]
+    },
+    {
+        "keys": ["~"],
+        "command": "markdown_flow_toggle_inline",
+        "args": { "marker": "~~" },
+        "context": [
+            { "key": "setting.markdown_flow_enabled", "operator": "not_equal", "operand": false },
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown - markup.raw - meta.code-fence - meta.frontmatter - comment.block.html - text.tex", "match_all": true }
+        ]
+    },
+    {
+        "keys": ["alt+k"],
+        "command": "markdown_flow_insert_link",
+        "context": [
+            { "key": "setting.markdown_flow_enabled", "operator": "not_equal", "operand": false },
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown - meta.code-fence - markup.raw.code-fence - meta.frontmatter - comment.block.html - text.tex", "match_all": true }
+        ]
+    },
+    {
+        "keys": ["ctrl+v"],
+        "command": "markdown_flow_smart_paste",
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "md_flow.can_smart_paste", "operator": "equal", "operand": true }
+        ]
+    },
+    {
+        "keys": ["shift+insert"],
+        "command": "markdown_flow_smart_paste",
+        "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "md_flow.can_smart_paste", "operator": "equal", "operand": true }
+        ]
+    }
+]

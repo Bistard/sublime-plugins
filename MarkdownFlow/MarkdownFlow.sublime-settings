@@ -1,0 +1,10 @@
+{
+    // Master switch for MarkdownFlow (can also be overridden per view/project via "markdown_flow_enabled")
+    "enabled": true,
+
+    // Number of spaces per nesting level when indenting/outdenting Markdown lists
+    "list_indent_size": 4,
+
+    // Wrap selected single-line text as [text](url) when pasting a single HTTP(S)/mailto URL
+    "smart_paste_url": true
+}
