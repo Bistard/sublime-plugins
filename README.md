@@ -7,6 +7,7 @@ Personal collection of lightweight, fast Sublime Text 4 plugins (targeting Subli
 | Plugin | Description |
 | --- | --- |
 | [`MarkdownFlow`](./MarkdownFlow) | Smooth Markdown list/blockquote authoring (auto-continue, step-by-step outdent, `Tab`/`Shift+Tab` indent + sibling renumbering, single-key marker Backspace), CJK-friendly streaming inline formatting (`**`, `*`, `` ` ``, `~~`), ergonomic links, and smart URL paste. |
+| [`MarkdownFold`](./MarkdownFold) | Clickable hierarchical Markdown heading folding (`▾` / `▸`, includes subheadings), strict boundary guardrails preventing accidental edits/auto-unfolding between folded sections, nested fold memory, and cross-reopen fold persistence. |
 
 ## Local Installation (Windows)
 
@@ -29,6 +30,7 @@ Core editing engines are decoupled from `sublime` / `sublime_plugin` so unit tes
 
 ```powershell
 python -m unittest discover -s MarkdownFlow/tests -t MarkdownFlow -v
+python -m unittest discover -s MarkdownFold/tests -t MarkdownFold -v
 ```
 
 ## License

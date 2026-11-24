@@ -1,0 +1,52 @@
+[
+    {
+        "caption": "MarkdownFold: Toggle Current Section",
+        "command": "markdown_fold_toggle_section"
+    },
+    {
+        "caption": "MarkdownFold: Fold Headings at Level 1",
+        "command": "markdown_fold_fold_level",
+        "args": { "level": 1 }
+    },
+    {
+        "caption": "MarkdownFold: Fold Headings at Level 2",
+        "command": "markdown_fold_fold_level",
+        "args": { "level": 2 }
+    },
+    {
+        "caption": "MarkdownFold: Fold Headings at Level 3",
+        "command": "markdown_fold_fold_level",
+        "args": { "level": 3 }
+    },
+    {
+        "caption": "MarkdownFold: Fold Headings at Level 4",
+        "command": "markdown_fold_fold_level",
+        "args": { "level": 4 }
+    },
+    {
+        "caption": "MarkdownFold: Fold Headings at Level 5",
+        "command": "markdown_fold_fold_level",
+        "args": { "level": 5 }
+    },
+    {
+        "caption": "MarkdownFold: Fold Headings at Level 6",
+        "command": "markdown_fold_fold_level",
+        "args": { "level": 6 }
+    },
+    {
+        "caption": "MarkdownFold: Fold All Headings",
+        "command": "markdown_fold_fold_all"
+    },
+    {
+        "caption": "MarkdownFold: Unfold All",
+        "command": "markdown_fold_unfold_all"
+    },
+    {
+        "caption": "Preferences: MarkdownFold Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/MarkdownFold/MarkdownFold.sublime-settings",
+            "default": "{\n\t$0\n}\n"
+        }
+    }
+]

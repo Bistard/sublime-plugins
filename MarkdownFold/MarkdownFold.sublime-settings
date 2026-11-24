@@ -1,0 +1,38 @@
+{
+    // Master switch for MarkdownFold. Can also be overridden per-view via
+    // `"markdown_fold_enabled": false` in syntax, project, or view settings.
+    "enabled": true,
+
+    // Show clickable fold/unfold arrows (`▾` / `▸`) to the left of Markdown headings.
+    "show_heading_arrows": true,
+
+    // Keep native gutter fold buttons (used for code blocks & indented lists) always
+    // visible in Markdown views instead of fading out until hovered.
+    "always_show_gutter_fold_buttons": true,
+
+    // Protect all folded regions in Markdown views against accidental edits,
+    // boundary Backspace/Delete, and unintended auto-unfolding.
+    "guard_folded_regions": true,
+
+    // Keep trailing blank lines before the next equal/higher heading outside the fold
+    // so there is a clean editable gap between collapsed sections.
+    "keep_trailing_blank_lines": true,
+
+    // Remember previously folded subheadings when folding an outer heading, and
+    // restore their folded state when the outer heading is unfolded.
+    "remember_nested_folds": true,
+
+    // Persist fold states across closing and reopening Markdown files
+    // (saved inside Sublime Text's Cache directory, never inside your workspace).
+    "persist_folds": true,
+
+    // Maximum number of files retained in the persistence cache (LRU eviction).
+    "persist_max_files": 500,
+
+    // Glyphs rendered for expanded and collapsed heading fold arrows.
+    "arrow_expanded": "▾",
+    "arrow_collapsed": "▸",
+
+    // Maximum file length (in characters) for live heading arrow rendering.
+    "max_arrow_file_size": 500000
+}
