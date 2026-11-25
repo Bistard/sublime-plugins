@@ -1,0 +1,34 @@
+[
+    {
+        "caption": "MarkdownGlanceBar: 分屏预览（开关）",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "side_by_side" }
+    },
+    {
+        "caption": "MarkdownGlanceBar: 全屏预览（切换）",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "full_screen" }
+    },
+    {
+        "caption": "MarkdownGlanceBar: 目录面板（切换）",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "outline" }
+    },
+    {
+        "caption": "MarkdownGlanceBar: 浏览器打开",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "browser" }
+    },
+    {
+        "caption": "MarkdownGlanceBar: Toggle Top-Right Toolbar",
+        "command": "markdown_glance_bar_toggle_toolbar"
+    },
+    {
+        "caption": "Preferences: MarkdownGlanceBar Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/MarkdownGlanceBar/MarkdownGlanceBar.sublime-settings",
+            "default": "{\n\t$0\n}\n"
+        }
+    }
+]

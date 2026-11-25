@@ -1,0 +1,23 @@
+[
+    { "caption": "-", "id": "markdown_glance_bar_tab_sep" },
+    {
+        "caption": "Markdown 分屏预览",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "side_by_side", "group": -1, "index": -1 }
+    },
+    {
+        "caption": "Markdown 全屏预览",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "full_screen", "group": -1, "index": -1 }
+    },
+    {
+        "caption": "Markdown 目录面板",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "outline", "group": -1, "index": -1 }
+    },
+    {
+        "caption": "Markdown 浏览器打开",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "browser", "group": -1, "index": -1 }
+    }
+]

@@ -6,6 +6,7 @@ Sublime Text 4 插件合集仓库（面向 Build 4205+ / Python 3.14 插件宿�
 
 - `MarkdownFlow/` — Markdown 列表/引用编辑流、缩进重编号、CJK 友好行内格式与智能 URL 粘贴
 - `MarkdownFold/` — Markdown 标题层级折叠、折叠区编辑护栏、嵌套折叠记忆与跨重开持久化
+- `MarkdownGlanceBar/` — `MarkdownGlance` 伴生快捷入口（首行右上角 annotation 按钮条、仅 Markdown 可见的编辑区与标签页右键菜单、智能分屏开关与焦点保持，`install.ps1` 自动同步 Package Control 依赖）
 - `scripts/` — Windows 本地 junction 挂载/卸载脚本（链接到 `%APPDATA%\Sublime Text\Packages`）
 - `.github/workflows/test.yml` — Python 3.12 / 3.13 / 3.14 单元测试 CI
 
@@ -26,6 +27,7 @@ Sublime Text 4 插件合集仓库（面向 Build 4205+ / Python 3.14 插件宿�
 # 运行单元测试
 python -m unittest discover -s MarkdownFlow/tests -t MarkdownFlow -v
 python -m unittest discover -s MarkdownFold/tests -t MarkdownFold -v
+python -m unittest discover -s MarkdownGlanceBar/tests -t MarkdownGlanceBar -v
 
 # Windows 本地挂载 / 卸载（使用目录联接热重载，无需管理员权限）
 .\scripts\install.ps1

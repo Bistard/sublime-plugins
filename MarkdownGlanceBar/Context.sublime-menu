@@ -1,0 +1,23 @@
+[
+    { "caption": "-", "id": "markdown_glance_bar_sep" },
+    {
+        "caption": "Markdown 分屏预览",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "side_by_side" }
+    },
+    {
+        "caption": "Markdown 全屏预览",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "full_screen" }
+    },
+    {
+        "caption": "Markdown 目录面板",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "outline" }
+    },
+    {
+        "caption": "Markdown 浏览器打开",
+        "command": "markdown_glance_bar_action",
+        "args": { "action": "browser" }
+    }
+]

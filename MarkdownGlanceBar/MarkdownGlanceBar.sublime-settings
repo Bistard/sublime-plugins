@@ -1,0 +1,28 @@
+{
+    // Master switch for MarkdownGlanceBar.
+    "enabled": true,
+
+    // Show clickable top-right toolbar buttons on line 1 of Markdown views.
+    "show_toolbar": true,
+
+    // Clicking "分屏预览" while side-by-side preview is already open closes it.
+    "toggle_side_by_side": true,
+
+    // Keep cursor focus in the Markdown source editor after opening side-by-side
+    // preview or toggling the outline panel.
+    "keep_source_focus": true,
+
+    // Separator rendered between toolbar buttons.
+    "toolbar_separator": " · ",
+
+    // Left border color of the ST4 annotation ("transparent" hides the bar).
+    "annotation_color": "transparent",
+
+    // Toolbar buttons in display order.
+    // Supported actions: "side_by_side", "full_screen", "outline", "browser".
+    "buttons": [
+        { "action": "side_by_side", "label": "分屏预览" },
+        { "action": "full_screen", "label": "全屏" },
+        { "action": "outline", "label": "目录" }
+    ]
+}

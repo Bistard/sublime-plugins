@@ -22,3 +22,5 @@ jobs:
         run: python -m unittest discover -s MarkdownFlow/tests -t MarkdownFlow -v
       - name: Run MarkdownFold unit tests
         run: python -m unittest discover -s MarkdownFold/tests -t MarkdownFold -v
+      - name: Run MarkdownGlanceBar unit tests
+        run: python -m unittest discover -s MarkdownGlanceBar/tests -t MarkdownGlanceBar -v
